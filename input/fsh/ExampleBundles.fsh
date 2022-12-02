@@ -24,36 +24,26 @@ Usage: #example
 
 * type = #document
 * timestamp = "2022-07-06T22:30:21Z"
-// Composition 1
-* entry[Composition].fullUrl = "urn:uuid:b55b8d97-63c5-433c-95cf-812af58aa5fb"
-* entry[Composition].resource = b55b8d97-63c5-433c-95cf-812af58aa5fb
+//Composition 1
+* entry[Composition][0]
+  * fullUrl = "urn:uuid:b55b8d97-63c5-433c-95cf-812af58aa5fb"
+  * resource = b55b8d97-63c5-433c-95cf-812af58aa5fb
 //  SubstanceDefinition 1..*
-* entry[SubstanceDefinition].fullUrl = "urn:uuid:942fcdc9-8ab9-4f52-be6d-af549117d462"
-* entry[SubstanceDefinition].resource = 942fcdc9-8ab9-4f52-be6d-af549117d462
-* entry[SubstanceDefinition].fullUrl = "urn:uuid:4dd0bb7a-6507-4df5-b2a1-f0d78ee6bba1"
-* entry[SubstanceDefinition].resource = 4dd0bb7a-6507-4df5-b2a1-f0d78ee6bba1
-//* entry[SubstanceDefinition].fullUrl = "urn:uuid:SubstanceDefinition/54f18826-92fb-4afa-bbc8-fdefabbd027f"
-//* entry[SubstanceDefinition].resource = 54f18826-92fb-4afa-bbc8-fdefabbd027f
+* entry[SubstanceDefinition][1]
+  * fullUrl = "urn:uuid:942fcdc9-8ab9-4f52-be6d-af549117d462"
+  * resource = 942fcdc9-8ab9-4f52-be6d-af549117d462
+* entry[SubstanceDefinition][2]
+  * fullUrl = "urn:uuid:4dd0bb7a-6507-4df5-b2a1-f0d78ee6bba1"
+  * resource = 4dd0bb7a-6507-4df5-b2a1-f0d78ee6bba1
 //  Organization 1..*
-* entry[Organization].fullUrl = "urn:uuid:17177734-4328-4f76-9b88-c014a9abc9e3"
-* entry[Organization].resource = 17177734-4328-4f76-9b88-c014a9abc9e3
+* entry[Organization][3]
+  * fullUrl = "urn:uuid:17177734-4328-4f76-9b88-c014a9abc9e3"
+  * resource = 17177734-4328-4f76-9b88-c014a9abc9e3
 //  DocumentReference 0..*
-* entry[DocumentReference].fullUrl = "urn:uuid:DocumentReference/fe3f13c1-f0ac-4b40-8024-f4386e290dfc"
-* entry[DocumentReference].resource = fe3f13c1-f0ac-4b40-8024-f4386e290dfc
-//  Composition 1
-//* entry[0]
-//  * insert bundleEntry(Composition, b55b8d97-63c5-433c-95cf-812af58aa5fb)
-//  SubstanceDefinition 1..*
-//* entry[+]
-//  * insert bundleEntry(SubstanceDefinition, 942fcdc9-8ab9-4f52-be6d-af549117d462)
-//* entry[+]
-//  * insert bundleEntry(SubstanceDefinition, 4dd0bb7a-6507-4df5-b2a1-f0d78ee6bba1)
-//  Organization 1..*
-//* entry[+]
-//  * insert bundleEntry(Organization, 17177734-4328-4f76-9b88-c014a9abc9e3)
-//  DocumentReference 0..*
-//* entry[+]
-//  * insert bundleEntry(DocumentReference, fe3f13c1-f0ac-4b40-8024-f4386e290dfc)
+* entry[DocumentReference][4]
+  * fullUrl = "urn:uuid:DocumentReference/fe3f13c1-f0ac-4b40-8024-f4386e290dfc"
+  * resource = fe3f13c1-f0ac-4b40-8024-f4386e290dfc
+
 
 //From Resource profile: eCTD Substance General Information
 Instance: b55b8d97-63c5-433c-95cf-812af58aa5fb
